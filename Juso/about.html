@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Juso Hasanović</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #333232;
+      color: #eee;
+      margin-top: 70px; /* da navbar ne preklapa sadržaj */
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #222;
+    }
+    .navbar-brand img {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+    }
+
+    /* Hero section */
+    .hero {
+      position: relative;
+      background: url('/Juso/images/channels4_banner.jpg') no-repeat center center / cover;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 0 20px;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    /* Section styling */
+    .section {
+      padding: 60px 15px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section h2 {
+      margin-bottom: 40px;
+      font-weight: 600;
+      color: #fff;
+      text-align: center;
+    }
+
+    /* Coach image */
+    .coach-img {
+      width: 100%;
+      max-width: 350px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      margin: 0 auto;
+      display: block;
+    }
+
+    /* Text content */
+    .coach-text {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #ddd;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #222;
+      color: #ddd;
+      padding: 20px 15px;
+      font-size: 14px;
+      text-align: center;
+    }
+    footer a {
+      color: #ddd;
+      text-decoration: none;
+      
+    }
+.coach-text {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive grid */
+    @media (min-width: 768px) {
+      .row.align-items-center {
+        display: flex;
+        gap: 30px;
+      }
+      .coach-text {
+        max-width: 700px;
+      }
+      .same-size-img {
+  width: 100%;
+  max-width: 350px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  display: block;
+  margin: 0 auto 10px;
+}
+
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="/Juso/index.html">
+      <img src="images/Logo.jpg" alt="Club Logo" />
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav gap-3">
+        <li class="nav-item"><a class="nav-link" href="/Juso/about.html">O meni</a></li>
+        <li class="nav-item"><a class="nav-link" href="/Juso/paketi.html">Paketi</a></li>
+        <li class="nav-item"><a class="nav-link" href="/Juso/contact.html">Kontakt</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <h1>O meni</h1>
+  </div>
+</header>
+
+<section class="section">
+  
+  <div class="row align-items-center justify-content-center">
+
+    <!-- Kolona sa slikama -->
+    <div class="col-12 col-md-4 text-center">
+  <img src="images/viber_image_2025-06-11_16-14-55-139.jpg" alt="Coach" class="coach-img mb-3" />
+  
+  <img src="/Juso/images/viber_image_2025-06-11_23-13-58-481.jpg" alt="Slika 1" class="same-size-img" />
+  <img src="/Juso/images/viber_image_2025-06-11_23-13-59-584.jpg" alt="Slika 2" class="same-size-img" />
+  <img src="/Juso/images/viber_image_2025-06-11_23-13-57-841.jpg" alt="Slika 3" class="same-size-img" />
+  <img src="/Juso/images/484826188_17860118850380231_3015775477017283560_n.jpg" alt="Slika 4" class="same-size-img" />
+</div>
+
+
+    <!-- Kolona sa tekstom -->
+    <div class="col-12 col-md-8 coach-text" style="text-align: center;">
+      <h2 style="text-align: center;">Juso Hasanović</h2><p>
+        Pozdrav, ja sam Juso Hasanović, posvećeni igrač bilijara iz Sarajeva, Bosna i Hercegovina. Rođen sam 1987. godine, a bilijar me prati i inspiriše već dugi niz godina.
+      </p>
+      <p>
+        Trenutno sam bilijarskog kluba Jump. Kroz svoju karijeru ostvario sam brojne značajne rezultate koji pokazuju moju predanost, vještinu i ljubav prema ovom sportu.
+      </p>
+
+      <h5>Najznačajniji rezultati:</h5>
+
+      <strong>Prva mjesta:</strong>
+      <ul style="list-style: none; padding-left: 0;">
+        <li>Prva Liga: 1. mjesto</li>
+        <li>Državna Liga Prva Divizija 4. kolo 2022: 1. mjesto</li>
+      </ul>
+
+      <strong>Druga mjesta:</strong>
+      <ul style="list-style: none; padding-left: 0;">
+        <li>Dynamic Liga: 2. mjesto</li>
+        <li>Državna Liga Prva Divizija 6. kolo 2022: 2. mjesto</li>
+        <li>Kup parova BiH 2022: 2. mjesto</li>
+        <li>Ekipno Prvenstvo 2013: 2. mjesto</li>
+      </ul>
+
+      <strong>Treća mjesta:</strong>
+      <ul style="list-style: none; padding-left: 0;">
+        <li>Novogodišnji Turnir 2023 Break: 3. mjesto</li>
+        <li>Državna Liga Prva Divizija 5. kolo 2023: 3. mjesto</li>
+        <li>Ekipno Prvenstvo 2023: 3. mjesto</li>
+        <li>Jump Open BiH (2020, 2021, 2022): 3. mjesta</li>
+      </ul>
+
+      <strong>Ostali značajni rezultati:</strong>
+      <ul style="list-style: none; padding-left: 0;">
+        <li>BPT Novi Sad: 5. mjesto</li>
+        <li>Masters: 5. mjesto</li>
+        <li>Državna Liga Prva Divizija 4. kolo 2019: 5. mjesto</li>
+        <li>Banja Luka Open 2023: 9. mjesto</li>
+        <li>BPT Visoko: 9. mjesto</li>
+        <li>Dynamic Open 2024: 9. mjesto</li>
+        <li>Državna Liga Prva Divizija 2. kolo 2019: 9. mjesto</li>
+        <li>Balkan Pool Tour 2022: 17. mjesto</li>
+        <li>Banja Luka Open 2024: 17. mjesto</li>
+      </ul>
+
+      <p>
+        Pored aktivnog takmičarskog angažmana, veliku pažnju posvećujem i treniranju novih generacija kroz moju školu bilijara. Cilj škole je da svakom polazniku približim osnove i napredne tehnike, te da kroz stručan i individualan pristup pomognem u razvoju njihove igre.
+      </p>
+      <p>
+        Ako želite naučiti osnove bilijara, usavršiti tehniku ili ste jednostavno zaljubljenik u ovaj sport, moja škola je pravo mjesto za vas. Vjerujem da se kvalitetnim radom, praksom i pravim smjernicama može postići značajan napredak.
+      </p>
+      <p>Radujem se svakom novom polazniku i zajedničkom putu ka boljoj igri!</p>
+    </div>
+
+  </div>
+</section>
+
+  <footer style="background-color: #222; color: #ddd; padding: 20px 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+  <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: center; align-items: center; gap: 40px; flex-wrap: wrap; font-size: 14px;">
+    
+    <div style="display: flex; align-items: center; gap: 8px;">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="#ddd" height="20" width="20" viewBox="0 0 24 24" style="flex-shrink: 0;">
+        <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 2v.511L12 13 4 6.511V6h16Zm0 12H4v-9l8 6 8-6v9Z"/>
+      </svg>
+      <a href="mailto:billiardclub@example.com" style="color: #ddd; text-decoration: none;">hasanovicjuso4@gmail.com</a>
+    </div>
+    
+    <div style="display: flex; align-items: center; gap: 8px;">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="#ddd" height="20" width="20" viewBox="0 0 24 24" style="flex-shrink: 0;">
+        <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.11-.21c1.2.48 2.5.74 3.85.74a1 1 0 0 1 1 1v3.5a1 1 0 0 1-1 1A17 17 0 0 1 3 6a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.35.26 2.65.74 3.85a1 1 0 0 1-.21 1.11l-2.2 2.2Z"/>
+      </svg>
+      <a href="tel:+38762 063 063" style="color: #ddd; text-decoration: none;">+38762 063 063</a>
+    </div>
+    
+<div style="display: flex; align-items: center; gap: 8px;">
+  <!-- YouTube Icon -->
+  <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 576 512" fill="#ddd" style="flex-shrink: 0;">
+    <path d="M549.7 124.1c-6.3-23.7-24.9-42.3-48.6-48.6C456.5 64 288 64 288 64S119.5 64 74.9 75.5c-23.7 6.3-42.3 24.9-48.6 48.6C15.8 168.6 15.8 256 15.8 256s0 87.4 10.5 131.9c6.3 23.7 24.9 42.3 48.6 48.6C119.5 448 288 448 288 448s168.5 0 213.1-11.5c23.7-6.3 42.3-24.9 48.6-48.6 10.5-44.5 10.5-131.9 10.5-131.9s0-87.4-10.5-131.9zM232 338.5V173.5L361 256l-129 82.5z"/>
+  </svg>
+  <a href="https://www.youtube.com/@jusobilliardcoach" target="_blank" style="color: #ddd; text-decoration: none;">YouTube</a>
+</div>
+
+    <div style="display: flex; align-items: center; gap: 20px;">
+      <a href="https://www.facebook.com/juso.hasanovic.37/" target="_blank" rel="noopener" style="color: #ddd; text-decoration: none; display: flex; align-items: center; gap: 6px;">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#ddd" height="20" width="20" viewBox="0 0 24 24">
+          <path d="M22 12a10 10 0 1 0-11.5 9.85v-6.95h-2.5v-2.9h2.5v-2.2c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.2c-1.2 0-1.6.7-1.6 1.5v1.9h2.8l-.4 2.9h-2.4v6.95A10 10 0 0 0 22 12Z"/>
+        </svg>
+        Facebook
+      </a>
+      <a href="https://www.instagram.com/skolabilijara_jh/" target="_blank" rel="noopener" style="color: #ddd; text-decoration: none; display: flex; align-items: center; gap: 6px;">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#ddd" height="20" width="20" viewBox="0 0 24 24">
+          <path d="M7 2C4.8 2 3 3.8 3 6v12c0 2.2 1.8 4 4 4h10c2.2 0 4-1.8 4-4V6c0-2.2-1.8-4-4-4H7Zm10 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4Zm-5 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Z"/>
+        </svg>
+        Instagram
+      </a>
+    </div>
+
+  </div>
+</footer>
+
