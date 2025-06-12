@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="bs">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Online Trening Paketi</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <style>
     body {
       background-color: #121212;
       color: #f1f1f1;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     .section-dark {
       background-color: #333232;
@@ -19,6 +20,7 @@
       background-color: transparent;
       color: #f1f1f1;
       border: none;
+      padding-left: 0;
     }
     .card.border-primary {
       background-color: #1e1e1e;
@@ -33,9 +35,56 @@
     .text-secondary {
       color: #cccccc !important;
     }
+    /* Za sliku i video veće dimenzije i lep box-shadow */
+    .media-wrapper {
+      max-width: 800px;
+      margin: 20px auto;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.7);
+      overflow: hidden;
+      height: 450px;
+    }
+    .media-wrapper img,
+    .media-wrapper video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    footer {
+      background-color: #222;
+      color: #ddd;
+      padding: 20px 0;
+      font-size: 14px;
+    }
+    footer a {
+      color: #ddd;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    /* Dodatni razmak ispod sekcija */
+    section.container > .row {
+      margin-bottom: 30px;
+    }
+    .card.border-primary:hover {
+  background-color: #e7f1ff; /* lagano plavo pozadinsko svjetlo na hover */
+  cursor: pointer;
+}
+
+.card.border-primary:hover .card-title {
+  color: #0046d5; /* tamnija plava boja na hover */
+}
+
+.card.border-primary:hover .card-text {
+  color: #0a53be; /* tamnija plava boja na hover */
+}
+
   </style>
 </head>
 <body>
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container d-flex justify-content-between align-items-center">
     <a class="navbar-brand" href="/Juso/index.html">
@@ -55,100 +104,152 @@
     </ul>
   </div>
 </nav>
-  <!-- SEKCIJA: Online trening paketi -->
-  <section class="container my-5 section-dark">
-    <div class="row justify-content-center">
-      <div class="col-lg-10">
-        <div class="card shadow p-4">
-          <h2 class="mb-3 text-center text-primary"></h2>Unaprijedite svoju vještinu</h2>
-          <p class="lead">
-            Izgradite rutinu koja donosi <strong>konstantu u igri</strong>! Online trening vam pomaže da savladate:
-          </p>
-          <ul class="list-group list-group-flush mb-4">
-            <li class="list-group-item">✔️ Pravilan stav i držanje štapa</li>
-            <li class="list-group-item">✔️ Položaj ruke i glave</li>
-            <li class="list-group-item">✔️ Kontrola pauza</li>
-            <li class="list-group-item">✔️ Povlačenje i izbačaj štapa</li>
-          </ul>
 
-          <p class="mt-3">
-            Trening je <strong>jednostavan</strong> i <strong>prilagođen vama</strong> – putem video poziva ili analize snimka vaše igre.
-          </p>
+<!-- Glavna sekcija: Online trening paketi -->
+<section class="container my-5 section-dark" style="margin-top: 90px;"> <!-- margin-top da ne zakloni navbar -->
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+      <div class="card shadow p-4">
+        <h2 class="mb-3 text-center text-primary">Unaprijedite svoju vještinu</h2>
+        <p class="lead">
+          Izgradite rutinu koja donosi <strong>konstantu u igri</strong>! Online trening vam pomaže da savladate:
+        </p>
+        <ul class="list-group list-group-flush mb-4">
+          <li class="list-group-item">✔️ Pravilan stav i držanje štapa</li>
+          <li class="list-group-item">✔️ Položaj ruke i glave</li>
+          <li class="list-group-item">✔️ Kontrola pauza</li>
+          <li class="list-group-item">✔️ Povlačenje i izbačaj štapa</li>
+        </ul>
 
-          <h4 class="mt-4 text-success">Šta uključuje online trening?</h4>
-          <ul class="mb-4">
-            <li>Detaljna analiza vašeg snimka i igre</li>
-            <li>Ukazivanje na greške i propuste</li>
-            <li>Izrada personalizovanog plana treninga</li>
-            <li>Praćenje napretka i podrška tokom realizacije</li>
-          </ul>
+        <p class="mt-3">
+          Trening je <strong>jednostavan</strong> i <strong>prilagođen vama</strong> – putem video poziva ili analize snimka vaše igre.
+        </p>
 
-          <h5 class="text-secondary mb-3"> Dostupni paketi:</h5>
-          <div class="row row-cols-1 row-cols-md-2 g-3">
-            <div class="col">
-              <div class="card border-primary h-100">
-                <div class="card-body">
-                  <h6 class="card-title text-primary">1. Analiza igre</h6>
-                  <p class="card-text">Ukazivanje na greške i preporuke za napredak.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card border-primary h-100">
-                <div class="card-body">
-                  <h6 class="card-title text-primary">2. Analiza + 3 treninga</h6>
-                  <p class="card-text">Kombinacija analize i tri online trening sesije.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card border-primary h-100">
-                <div class="card-body">
-                  <h6 class="card-title text-primary">3. Analiza + 5 treninga</h6>
-                  <p class="card-text">Detaljan rad i kontinuiran napredak kroz pet sesija.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card border-primary h-100">
-                <div class="card-body">
-                  <h6 class="card-title text-primary">4. Analiza + 8 treninga</h6>
-                  <p class="card-text">Najkompletniji paket za temeljno usavršavanje igre.</p>
-                </div>
+        <h4 class="mt-4 text-success">Šta uključuje online trening?</h4>
+        <ul class="mb-4">
+          <li>Detaljna analiza vašeg snimka i igre</li>
+          <li>Ukazivanje na greške i propuste</li>
+          <li>Izrada personalizovanog plana treninga</li>
+          <li>Praćenje napretka i podrška tokom realizacije</li>
+        </ul>
+
+        <h5 class="text-secondary mb-3">Dostupni paketi:</h5>
+        <div class="row row-cols-1 row-cols-md-2 g-3">
+          <div class="col">
+            <div class="card border-primary h-100">
+              <div class="card-body">
+                <h6 class="card-title text-primary">1. Analiza igre</h6>
+                <p class="card-text">Ukazivanje na greške i preporuke za napredak.</p>
               </div>
             </div>
           </div>
-
-          <!-- SEKCIJA: Target Play trening -->
-<div class="mt-5 d-flex flex-column flex-md-row align-items-center bg-dark p-4 rounded">
-  <!-- Tekstualni dio -->
-  <div class="flex-fill pe-md-4">
-    <h3 class="text-warning">Target Position Play</h3>
-    <p>
-      Partije ne rješava ubacivanje teških kugli, nego poziciona igra.
-Usavršite je uz Target Position Play program koji sadrži 200 različitih pozicija na stolu i mete koje ne ometaju putanju bijele.
-    </p>
-    <ul>
-      <li>✔ Razvijanje fine motorike i tačnosti</li>
-      <li>✔ Bolje razumijevanje putanje i rotacije kugli</li>
-      <li>✔ Praktične vježbe sa konkretnim ciljevima</li>
-    </ul>
-  </div>
-
-  <!-- Slika -->
-  <div class="flex-fill mt-4 mt-md-0 text-center">
-    <img src="/Juso/images/targer.jpg" alt="Target Play primjer" class="img-fluid rounded shadow">
-  </div>
-</div>
-
-
-          <div class="mt-4 text-center">
-            <a href="/Juso/contact.html#kontakt" class="btn btn-success px-4 py-2">Zakažite svoj trening</a>
+          <div class="col">
+            <div class="card border-primary h-100">
+              <div class="card-body">
+                <h6 class="card-title text-primary">2. Analiza + 3 treninga</h6>
+                <p class="card-text">Kombinacija analize i tri online trening sesije.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-primary h-100">
+              <div class="card-body">
+                <h6 class="card-title text-primary">3. Analiza + 5 treninga</h6>
+                <p class="card-text">Detaljan rad i kontinuiran napredak kroz pet sesija.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-primary h-100">
+              <div class="card-body">
+                <h6 class="card-title text-primary">4. Analiza + 8 treninga</h6>
+                <p class="card-text">Najkompletniji paket za temeljno usavršavanje igre.</p>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- Target Position Play sekcija -->
+        <div class="mt-5 p-4 rounded bg-dark d-flex flex-column">
+          <h3 class="text-warning">Target Position Play</h3>
+          <p>
+            Partije ne rješava ubacivanje teških kugli, nego poziciona igra.
+            Usavršite je uz Target Position Play program koji sadrži 200 različitih pozicija na stolu i mete koje ne ometaju putanju bijele.
+          </p>
+          <ul>
+            <li>✔ Razvijanje fine motorike i tačnosti</li>
+            <li>✔ Bolje razumijevanje putanje i rotacije kugli</li>
+            <li>✔ Praktične vježbe sa konkretnim ciljevima</li>
+          </ul>
+
+<style>
+  .card-custom {
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+    border: 2px solid #0d6efd; /* Bootstrap primary */
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+
+  .card-custom:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(13, 110, 253, 0.6);
+    border-color: #66aaff;
+  }
+
+  .card-custom img,
+  .card-custom video {
+    border-radius: 15px 15px 0 0;
+    height: 450px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .card-custom:hover img,
+  .card-custom:hover video {
+    transform: scale(1.05);
+  }
+
+  .card-title {
+    color: #0d6efd; /* bootstrap primary color */
+  }
+</style>
+
+<div class="row g-4 mt-4 justify-content-center">
+  <div class="col-md-6">
+    <div class="card card-custom h-100 shadow">
+      <img src="/Juso/images/targer.jpg" alt="Target Play primjer" class="card-img-top" />
+      <div class="card-body text-center">
+    
       </div>
     </div>
-  </section>
-  <footer style="background-color: #222; color: #ddd; padding: 20px 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+  </div>
+
+  <div class="col-md-6">
+    <div class="card card-custom h-100 shadow">
+      <video autoplay muted loop controls class="card-img-top">
+        <source src="/Juso/videos/target practice.mp4" type="video/mp4" />
+        Vaš preglednik ne podržava video tag.
+      </video>
+      <div class="card-body text-center">
+      
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer style="background-color: #222; color: #ddd; padding: 20px 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
   <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: center; align-items: center; gap: 40px; flex-wrap: wrap; font-size: 14px;">
     
     <div style="display: flex; align-items: center; gap: 8px;">
@@ -189,8 +290,10 @@ Usavršite je uz Target Position Play program koji sadrži 200 različitih pozic
     </div>
 
   </div>
+
+ 
 </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
